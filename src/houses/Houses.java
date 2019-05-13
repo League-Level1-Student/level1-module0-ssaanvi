@@ -41,12 +41,17 @@ public class Houses {
 
 		rob.setSpeed(9);
 		Random r = new Random();
-		for (int i = 0; i < 2; i++) {
-			drawFlatRoof();
-		}
-		for (int i = 0; i < 1; i++) {
-			drawPointyRoof();
-		}
+		drawFlatRoof();
+		drawPointyRoof();
+		rob.turn(270);
+		drawFlatRoof();
+		drawPointyRoof();
+		rob.turn(270);
+		drawFlatRoof();
+		drawPointyRoof();
+		rob.turn(270);
+		drawFlatRoof();
+		drawPointyRoof();
 	}
 
 	public static void drawFlatRoof() {
@@ -62,11 +67,15 @@ public class Houses {
 	}
 
 	public static void drawPointyRoof() {
-
-		rob.move(25);
+		rob.turn(360);
+		rob.move(122);
 		rob.turn(70);
-		rob.move(25);
+		rob.move(37);
 		rob.turn(50);
-
+		rob.move(37);
+		rob.turn(60);
+		rob.move(122);
+		rob.turn(270);
+		rob.move(30);
 	}
 }
