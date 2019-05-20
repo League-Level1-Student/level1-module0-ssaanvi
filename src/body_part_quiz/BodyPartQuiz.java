@@ -42,7 +42,7 @@ public class BodyPartQuiz {
 
 		// 3. Change the size of the window so that you can only see part of the
 		// image.
-		window.setSize(500, 500);
+		window.setSize(190, 150);
 
 		showNextImage();
 
